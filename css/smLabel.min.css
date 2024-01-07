@@ -1,1 +1,2 @@
-div.sm{display:inline-block}div.sm.SFF{width:1.3cm;height:.4cm;background:#e0e0e0}div.sm.LFF{width:2.8cm;height:.5cm;background:#e0e0e0}div.sm div.interface{vertical-align:middle;text-align:center;font-weight:700;color:#000;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif}div.sm.LFF div.interface{font-size:14px}div.sm.SFF div.interface{font-size:7px}
+/* Supermicro Label Styling */
+div.sm{display:inline-block}div.sm.SFF{background:#E0E0E0;height:0.4cm;width:1.3cm}div.sm.LFF{background:#E0E0E0;height:0.5cm;width:2.8cm}div.sm div.interface{color:black;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;font-weight:bold;text-align:center;vertical-align:middle}div.sm.LFF div.interface{font-size:14px}div.sm.SFF div.interface{font-size:7px}

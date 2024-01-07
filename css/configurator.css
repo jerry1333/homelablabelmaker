@@ -1,57 +1,51 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
   min-height: 100%;
+  position: relative;
 }
+
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 80px;
   font-family: Metric;
   font-size: 10pt;
   line-height: 1.2 !important;
+  margin-bottom: 80px; /* Margin bottom by footer height */
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
+  height: 80px; /* Set the fixed height of the footer here */
+  position: absolute;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 80px;
 }
 
 .footer .row {
   background-color: #f5f5f5;
 }
 
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
 .container {
-  width: auto;
   max-width: 680px;
   padding: 0 15px;
+  width: auto;
 }
+
 .container .text-muted {
   margin: 20px 0;
 }
 
 /* Main Container stlye */
-
 div#mainContainer {
-  margin-top: 50px;
+  height: 100%;
   margin-bottom: 2cm;
+  margin-top: 50px;
   text-align: center;
-  width:100%;
-  height:100%;
+  width: 100%;
 }
 
 div#mainContainer table {
-  margin: 0 auto;
   border: none;
-  border-collapse: collapse; 
+  border-collapse: collapse;
+  margin: 0 auto;
 }
 
 div#mainContainer table tr:not(:last-child),
@@ -61,8 +55,8 @@ div#mainContainer table tr:not(:last-child) {
 
 div#mainContainer table td,
 div#mainContainer table td {
-  width: 2.3cm;
   text-align: center;
+  width: 2.3cm;
   vertical-align: middle;
 }
 
@@ -70,19 +64,18 @@ div#mainContainer table .hp,
 div#mainContainer table .sm,
 div#mainContainer table .dell,
 div#mainContainer table .dell2 {
-  padding: 0px;
   margin: 5px 0px;
+  padding: 0px;
 }
 
 .configMainRow div.row div,
 .configMainRow div.row ul {
-  text-align: center;
   display: inline-block;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /* Checkbox styling for the switch */
-
 .switch-label {
   position: relative;
   right: 15px;
@@ -90,29 +83,30 @@ div#mainContainer table .dell2 {
 }
 
 .material-switch > input[type="checkbox"] {
-  display: none;   
+  display: none;
 }
 
 .material-switch > label {
   cursor: pointer;
   height: 0px;
-  position: relative; 
-  width: 40px;  
+  position: relative;
+  width: 40px;
 }
 
 .material-switch > label::before {
   background: rgb(0, 0, 0);
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
   content: '';
   height: 16px;
   margin-top: -8px;
-  position:absolute;
   opacity: 0.3;
+  position: absolute;
+  right: 0px;
   transition: all 0.4s ease-in-out;
   width: 40px;
-  right: 0px;
 }
+
 .material-switch > label::after {
   background: rgb(255, 255, 255);
   border-radius: 16px;
@@ -126,10 +120,12 @@ div#mainContainer table .dell2 {
   transition: all 0.3s ease-in-out;
   width: 24px;
 }
+
 .material-switch > input[type="checkbox"]:checked + label::before {
   background: inherit;
   opacity: 0.5;
 }
+
 .material-switch > input[type="checkbox"]:checked + label::after {
   background: inherit;
   left: 20px;
@@ -138,53 +134,57 @@ div#mainContainer table .dell2 {
 .label-primary  {
   background-color: #428bca;
 }
+
 .label-danger {
   background-color: #d9534f;
 }
+
 .label-info {
   background-color: #5bc0de;
 }
+
 .label-warning {
   background-color: #f0ad4e;
 }
+
 .label-success {
   background-color: #5cb85c;
 }
 
 /* End Checkbox */
-
 @media screen {
-  .btn.disabled, .btn:disabled { opacity: 0.4 !important; }
+  .btn.disabled, .btn:disabled {
+    opacity: 0.4 !important;
+  }
 }
 
 @media screen and (min-width: 700px) {
-  #configuratorMain .modal-dialog  {width:650px;}
+  #configuratorMain .modal-dialog {
+    width: 700px;
+  }
 }
 
 #topContainer {
-  width: 100%;
-  margin: 0 0 20px;
-  padding: 0;
-  background-color:#30333A;
-  top: 0;
-  left: 0;
+  background-color: #30333A;
   color: white;
   font-family: Metric;
   font-size: 42px;
+  left: 0;
+  margin: 0 0 20px;
+  padding: 0;
   text-align: center;
+  top: 0;
+  width: 100%;
 }
-  
-
 
 /* Vendor select screen */
-
 table#vendors img {
   width: 180px;
 }
 
 table#vendors td {
-  width: 33%;
   text-align: center;
+  width: 33%;
 }
 
 table#vendors img {
